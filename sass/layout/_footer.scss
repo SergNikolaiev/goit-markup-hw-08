@@ -1,0 +1,131 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $first-background-color;
+
+  &__parts {
+    display: flex;
+  }
+
+  &__logo {
+    color: #ffffff;
+  }
+
+  &__adress {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-style: normal;
+    @include text(400, 14px, 1.71, 0.03em);
+    color: #ffffff;
+  }
+
+  &__contacts-link {
+    @include text(400, 14px, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__social {
+    width: 206px;
+    margin-left: 70px;
+    margin-top: 12px;
+
+    &__text {
+      margin-bottom: 20px;
+      @include text(700, 14px, 1.14, 0.03em);
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+
+      fill: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition-property: fill, box-shadow, background;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+
+      fill: #ffffff;
+      background: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+    }
+  }
+
+  &__subscribe {
+    flex-direction: column;
+    margin-left: 93px;
+
+    &__text {
+      @include text(700, 14px, 1.14, 0.03em);
+      text-transform: uppercase;
+      color: $first-title-color;
+      margin-top: 12px;
+      display: block;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: inherit;
+      padding-left: 16px;
+      color: #ffffff;
+      outline: none;
+    }
+
+    &__input::placeholder {
+      @include text(400, 16px, 1.25, 0.03em);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__btn {
+      width: 200px;
+      height: 50px;
+      background-color: $btn-background-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      cursor: pointer;
+      @include text(700, 16px, 1.87, 0.06em);
+      color: $btn-color;
+      margin-left: 12px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__icon {
+      margin-left: 10px;
+    }
+  }
+}

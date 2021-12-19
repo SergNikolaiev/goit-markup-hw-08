@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    color: $second-title-color;
+
+    @include text(bold, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include text(400, 14px, 1.71, 0.03em);
+  }
+}

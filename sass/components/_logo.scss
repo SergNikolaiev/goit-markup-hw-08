@@ -1,0 +1,10 @@
+.logo {
+  margin-right: 93px;
+  color: $logo-color;
+  font-family: Raleway;
+  @include text(700, 26px, 1.19, 0.03em);
+}
+
+.logo-header {
+  color: #000000;
+}
