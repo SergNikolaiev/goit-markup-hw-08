@@ -28,6 +28,13 @@
         
         <nav class="header__navigation">
           <a href="" class="logo link">Web<span class="logo-header">Studio</span></a>
+          
+          <div class="header__menu-mob">  
+          <svg width="24" height="16">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>  
+          </div>
+
           <ul class="list header__menu">
             <li class="header__menu-item">
               <a class="menu-item__link link active-list" href="./index.html">Студия</a>
@@ -124,7 +131,7 @@
       </section>
 
       <!-- Section 2 Чем мы занимаемся -->
-      <section class="section section-align">
+      <section class="section section-align services-mob">
         <div class="container">
 
           <h2 class="title-sections">Чем мы занимаемся</h2>
@@ -171,9 +178,18 @@
 
           <ul class="list team">
             <li class="team__item">
-              <img src="./images/ihor_demyanienko.jpg" alt="Игорь Демьяненко" width="270" />
 
-              <div class="employee-cards">
+              <picture>
+                <source 
+                  srcset="./images/ihor_demyanienko_mob.jpg 1x,
+                          ./images/ihor_demyanienko_mob_2x.jpg 2x"
+                  media="(min-width: 480px)">          
+                <img 
+                  src="./images/ihor_demyanienko.jpg" 
+                  alt="Игорь Демьяненко"/>
+              </picture>
+
+             <div class="employee-cards">
                 <h3 class="employee-cards__name">Игорь Демьяненко</h3>
                 <p class="employee-cards__profession">Product Designer</p>
                 <ul class="employee-cards__social-link list">
@@ -209,8 +225,18 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item">
-              <img src="./images/olga_repina.jpg" alt="Ольга Репина" width="270" />
+
+              <picture>
+                <source 
+                  srcset="./images/olha_repina_mob.jpg 1x,
+                          ./images/olha_repina_mob_2x.jpg 2x"
+                  media="(min-width: 480px)">
+                <img src="./images/olha_repina.jpg" 
+                  alt="Ольга Репина" 
+                    /> 
+              </picture>
 
               <div class="employee-cards">
                 <h3 class="employee-cards__name">Ольга Репина</h3>
@@ -249,8 +275,18 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/nikolai_tarasov.jpg" alt="Николай Тарасов" width="270" />
 
+              <picture>
+                <source 
+                  srcset="./images/nikolai_tarasov_mob.jpg 1x,
+                          ./images/nikolai_tarasov_mob_2x.jpg 2x"
+                  media="(min-width: 480px)">
+              
+                <img 
+                  src="./images/nikolai_tarasov.jpg" 
+                  alt="Николай Тарасов" 
+                />
+              </picture>
               <div class="employee-cards">
                 <h3 class="employee-cards__name">Николай Тарасов</h3>
                 <p class="employee-cards__profession">Marketing</p>
@@ -288,7 +324,16 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/mihail_ermakov.jpg" alt="Михаил Ермаков" width="270" />
+
+              <picture>
+                <source 
+                    srcset="./images/mihail_ermakov_mob.jpg 1x,
+                            ./images/mihail_ermakov_mob_2x.jpg 2x"
+                    media="(min-width: 480px)">
+                <img 
+                    src="./images/mihail_ermakov.jpg" 
+                    alt="Михаил Ермаков"/>
+              </picture>
 
               <div class="employee-cards">
                 <h3 class="employee-cards__name">Михаил Ермаков</h3>

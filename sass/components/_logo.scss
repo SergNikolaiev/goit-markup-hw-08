@@ -1,9 +1,16 @@
 .logo {
-  margin-right: 93px;
+  display: block;
   color: $logo-color;
   font-family: Raleway;
-  @include text(700, 26px, 1.19, 0.03em);
+  @include text(700, 24px, 1.16, 0.03em);
 }
+
+// .logo {
+//   margin-right: 93px;
+//   color: $logo-color;
+//   font-family: Raleway;
+//   @include text(700, 26px, 1.19, 0.03em);
+// }
 
 .logo-header {
   color: #000000;
