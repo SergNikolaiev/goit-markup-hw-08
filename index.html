@@ -29,7 +29,7 @@
         <nav class="header__navigation">
           <a href="" class="logo link">Web<span class="logo-header">Studio</span></a>
           
-          <div class="header__menu-mob">  
+          <div class="header__menu-mob">
           <svg width="24" height="16">
               <use href="./images/icons.svg#icon-menu_24px"></use>
             </svg>  
@@ -131,38 +131,56 @@
       </section>
 
       <!-- Section 2 Чем мы занимаемся -->
-      <section class="section section-align services-mob">
+      <section class="section section-align services-tab">
         <div class="container">
 
-          <h2 class="title-sections">Чем мы занимаемся</h2>
+          <h2 class="title-services">Чем мы занимаемся</h2>
 
           <ul class="list services">
             <li class="services__item">
-              <a href="" class="services__item-link"
-                ><img
-                  src="./images/img.jpg"
-                  alt="Руки лежат на клавиатуре перед монитором и планшетом"
-                  width="370"
-                />
+              <a href="" class="services__item-link">
+                <picture>
+                  <source srcset="./images/features_1.jpg 1x,
+                                  ./images/features_1.jpg 2x"
+                          media="min-width: 1200px">
+                  <img
+                    src="./images/features_1.jpg"
+                    alt="Руки лежат на клавиатуре перед монитором и планшетом"
+                  />
+                </picture>
+                
                 <div class="services__item-text"><p>Десктопные приложения</p></div>
               </a>
             </li>
             <li class="services__item">
-              <a href="" class="services__item-link"
-                ><img
-                  src="./images/img2.jpg"
-                  alt="Открытый ноутбук и телефон в правой руке"
-                  width="370"
-                />
+              <a href="" class="services__item-link">
+                
+                <picture>
+                  <source srcset="./images/features_2.jpg 1x,
+                                  ./images/features_2.jpg 2x"
+                          media="min-width: 1200px">
+                  <img
+                          src="./images/features_2.jpg"
+                          alt="Открытый ноутбук и телефон в правой руке"
+                  />
+                </picture>
+                
                 <div class="services__item-text"><p>Мобильные приложения</p></div></a
               >
             </li>
             <li class="services__item">
-              <a href="" class="services__item-link"
-                ><img 
-                  src="./images/img3.jpg" 
-                  alt="Планшет в руке" 
-                  width="370" />
+              <a href="" class="services__item-link">
+                
+                <picture>
+                  <source srcset="./images/features_3.jpg 1x,
+                                  ./images/features_3.jpg 2x"
+                          media="min-width: 1200px">
+                  <img 
+                          src="./images/features_3.jpg" 
+                          alt="Планшет в руке" 
+                  />
+                </picture>
+                
                 <div class="services__item-text"><p>Дизайнерские решения</p></div></a
               >
             </li>
@@ -183,7 +201,18 @@
                 <source 
                   srcset="./images/ihor_demyanienko_mob.jpg 1x,
                           ./images/ihor_demyanienko_mob_2x.jpg 2x"
-                  media="(min-width: 480px)">          
+                  media="min-width: 480px">
+
+                <source
+                  srcset="./images/ihor_demyanienko_tab.jpg 1x,
+                          ./images/ihor_demyanienko_tab_2x.jpg 2x"
+                  media="min-width: 768px">
+                
+                <source
+                  srcset="./images/ihor_demyanienko_desk.jpg 1x,
+                          ./images/ihor_demyanienko_desk_2x.jpg 2x"
+                  media="min-width: 1200px">
+               
                 <img 
                   src="./images/ihor_demyanienko.jpg" 
                   alt="Игорь Демьяненко"/>
@@ -232,10 +261,21 @@
                 <source 
                   srcset="./images/olha_repina_mob.jpg 1x,
                           ./images/olha_repina_mob_2x.jpg 2x"
-                  media="(min-width: 480px)">
-                <img src="./images/olha_repina.jpg" 
-                  alt="Ольга Репина" 
-                    /> 
+                  media="min-width: 480px">
+
+                <source
+                  srcset="./images/olha_repina_tab.jpg 1x,
+                          ./images/olha_repina_tab_2x.jpg 2x"
+                  media="min-width: 768px">
+                
+                <source
+                  srcset="./images/olha_repina_desk.jpg 1x,
+                          ./images/olha_repina_desk_2x.jpg 2x"
+                  media="min-width: 1200px">
+               
+                <img 
+                  src="./images/olha_repina.jpg" 
+                  alt="Игорь Демьяненко"/>
               </picture>
 
               <div class="employee-cards">
@@ -280,13 +320,23 @@
                 <source 
                   srcset="./images/nikolai_tarasov_mob.jpg 1x,
                           ./images/nikolai_tarasov_mob_2x.jpg 2x"
-                  media="(min-width: 480px)">
-              
+                  media="min-width: 480px">
+
+                <source
+                  srcset="./images/nikolai_tarasov_tab.jpg 1x,
+                          ./images/nikolai_tarasov_tab_2x.jpg 2x"
+                  media="min-width: 768px">
+                
+                <source
+                  srcset="./images/nikolai_tarasov_desk.jpg 1x,
+                          ./images/nikolai_tarasov_desk_2x.jpg 2x"
+                  media="min-width: 1200px">
+               
                 <img 
                   src="./images/nikolai_tarasov.jpg" 
-                  alt="Николай Тарасов" 
-                />
+                  alt="Игорь Демьяненко"/>
               </picture>
+
               <div class="employee-cards">
                 <h3 class="employee-cards__name">Николай Тарасов</h3>
                 <p class="employee-cards__profession">Marketing</p>
@@ -327,12 +377,23 @@
 
               <picture>
                 <source 
-                    srcset="./images/mihail_ermakov_mob.jpg 1x,
-                            ./images/mihail_ermakov_mob_2x.jpg 2x"
-                    media="(min-width: 480px)">
+                  srcset="./images/mihail_ermakov_mob.jpg 1x,
+                          ./images/mihail_ermakov_mob_2x.jpg 2x"
+                  media="min-width: 480px">
+
+                <source
+                  srcset="./images/mihail_ermakov_tab.jpg 1x,
+                          ./images/mihail_ermakov_tab_2x.jpg 2x"
+                  media="min-width: 768px">
+                
+                <source
+                  srcset="./images/mihail_ermakov_desk.jpg 1x,
+                          ./images/mihail_ermakov_desk_2x.jpg 2x"
+                  media="min-width: 1200px">
+               
                 <img 
-                    src="./images/mihail_ermakov.jpg" 
-                    alt="Михаил Ермаков"/>
+                  src="./images/mihail_ermakov.jpg" 
+                  alt="Игорь Демьяненко"/>
               </picture>
 
               <div class="employee-cards">
