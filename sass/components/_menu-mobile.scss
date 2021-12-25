@@ -1,0 +1,90 @@
+@media screen and (max-width: 480px) {
+  .mob {
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 0 40px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    transform: translateX(0);
+    transition: transform 500ms;
+
+    &__menu-close {
+      border: none;
+      background: inherit;
+      position: absolute;
+      top: 21px;
+      right: 25px;
+      fill: #212121;
+      padding: 0;
+
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+      }
+    }
+
+    &__menu-item {
+      @include text(500, 40px, 1.17, 0.03em);
+      margin-bottom: 32px;
+      color: $navigation-color;
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    &__contacts-item {
+      margin-bottom: 32px;
+    }
+
+    &__contacts-tel {
+      @include text(500, 34px, 1.17, 0.02em);
+      color: $accent-color;
+    }
+
+    &__contacts-envelope {
+      @include text(500, 24px, 1.17, 0.02em);
+      color: $contacts-color;
+    }
+
+    &__social {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__social-item:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      margin-right: 10px;
+    }
+
+    &__social-item {
+      @include text(500, 18px, 1.22, 0.02em);
+      color: $accent-color;
+      padding-right: 10px;
+    }
+  }
+
+  .wrap-mob-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 64px;
+  }
+
+  .is-hidden .mob {
+    transform: translateX(0);
+    transition: transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .mob {
+    display: none;
+  }
+}

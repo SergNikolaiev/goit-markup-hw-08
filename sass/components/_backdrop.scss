@@ -8,6 +8,10 @@
 }
 
 .modal {
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    min-height: 609px;
+  }
   width: 528px;
   min-height: 581px;
   background: #ffffff;
@@ -134,6 +138,9 @@
 }
 
 .modal-policy__text {
+  @media screen and (max-width: 1199px) {
+    @include text(400, 12px, 1.16, 0.03em);
+  }
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -163,6 +170,9 @@
 }
 
 .agreement {
+  @media screen and (max-width: 1199px) {
+    @include text(400, 12px, 1.16, 0.03em);
+  }
   color: $accent-color;
   font-family: inherit;
   font-size: 14px;

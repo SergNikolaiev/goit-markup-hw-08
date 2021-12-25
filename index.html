@@ -23,17 +23,61 @@
 
 <!-- ========= Header ======== -->
 
-    <header>
+    <header> 
+      <div class="mob is-hidden">
+        <button type="button" class="mob__menu-close">
+          <svg width="18" height="18">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>  
+          </button>
+          <div class="wrap-mob-menu">
+            <ul class="list mob__menu">
+              <li class="mob__menu-item">
+                <a class="mob__menu-item__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob__menu-item">
+                <a class="mob__menu-item__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob__menu-item">
+                <a class="mob__menu-item__link link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="list mob__contacts">
+              <li class="mob__contacts-item">
+                <a href="https//tel:+380961111111" class="link mob__contacts-tel">
+                
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob__contacts-item">
+                <a href="https//mailto:info@devstudio.com" class="link mob__contacts-envelope">
+              
+                  info@devstudio.com</a
+                >
+              </li>
+          
+            </ul>
+          </div>
+
+          <ul class="mob__social list">
+            <li class="mob__social-item"><a href="" class="mob__social-link link">Instagram</a></li>
+            <li class="mob__social-item"><a href="" class="mob__social-link link">Twitter</a></li>
+            <li class="mob__social-item"><a href="" class="mob__social-link link">Facebook</a></li>
+            <li class="mob__social-item"><a href="" class="mob__social-link link">LinkedIn</a></li>
+          </ul>
+      </div>
+
       <div class="container header">
         
         <nav class="header__navigation">
           <a href="" class="logo link">Web<span class="logo-header">Studio</span></a>
           
-          <div class="header__menu-mob">
+          <button type="button" class="header__menu-mob-open">
           <svg width="24" height="16">
               <use href="./images/icons.svg#icon-menu_24px"></use>
             </svg>  
-          </div>
+          </button>
 
           <ul class="list header__menu">
             <li class="header__menu-item">
@@ -198,23 +242,23 @@
             <li class="team__item">
 
               <picture>
-                <source 
-                  srcset="./images/ihor_demyanienko_mob.jpg 1x,
-                          ./images/ihor_demyanienko_mob_2x.jpg 2x"
-                  media="min-width: 480px">
-
-                <source
-                  srcset="./images/ihor_demyanienko_tab.jpg 1x,
-                          ./images/ihor_demyanienko_tab_2x.jpg 2x"
-                  media="min-width: 768px">
                 
                 <source
-                  srcset="./images/ihor_demyanienko_desk.jpg 1x,
-                          ./images/ihor_demyanienko_desk_2x.jpg 2x"
-                  media="min-width: 1200px">
+                  srcset="./images/team/ihor_demyanienko_desk.jpg 1x,
+                          ./images/team/ihor_demyanienko_desk_2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source
+                  srcset="./images/team/ihor_demyanienko_tab.jpg 1x,
+                          ./images/team/ihor_demyanienko_tab_2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source 
+                  srcset="./images/team/ihor_demyanienko_mob.jpg 1x,
+                          ./images/team/ihor_demyanienko_mob_2x.jpg 2x"
+                  media="(max-width: 480px)">
+                
                
                 <img 
-                  src="./images/ihor_demyanienko.jpg" 
+                  src="./images/team/ihor_demyanienko_desk.jpg" 
                   alt="Игорь Демьяненко"/>
               </picture>
 
@@ -258,24 +302,24 @@
             <li class="team__item">
 
               <picture>
-                <source 
-                  srcset="./images/olha_repina_mob.jpg 1x,
-                          ./images/olha_repina_mob_2x.jpg 2x"
-                  media="min-width: 480px">
+                <source
+                  srcset="./images/team/olha_repina_desk.jpg 1x,
+                          ./images/team/olha_repina_desk_2x.jpg 2x"
+                  media="(min-width: 1200px)">
 
                 <source
-                  srcset="./images/olha_repina_tab.jpg 1x,
-                          ./images/olha_repina_tab_2x.jpg 2x"
-                  media="min-width: 768px">
+                  srcset="./images/team/olha_repina_tab.jpg 1x,
+                          ./images/team/olha_repina_tab_2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source 
+                  srcset="./images/team/olha_repina_mob.jpg 1x,
+                          ./images/team/olha_repina_mob_2x.jpg 2x"
+                  media="(max-width: 480px)">
                 
-                <source
-                  srcset="./images/olha_repina_desk.jpg 1x,
-                          ./images/olha_repina_desk_2x.jpg 2x"
-                  media="min-width: 1200px">
                
                 <img 
-                  src="./images/olha_repina.jpg" 
-                  alt="Игорь Демьяненко"/>
+                  src="./images/team/olha_repina_desk.jpg" 
+                  alt="Ольга Репина"/>
               </picture>
 
               <div class="employee-cards">
@@ -317,24 +361,24 @@
             <li class="team__item">
 
               <picture>
-                <source 
-                  srcset="./images/nikolai_tarasov_mob.jpg 1x,
-                          ./images/nikolai_tarasov_mob_2x.jpg 2x"
-                  media="min-width: 480px">
+                <source
+                  srcset="./images/team/nikolai_tarasov_desk.jpg 1x,
+                          ./images/team/nikolai_tarasov_desk_2x.jpg 2x"
+                  media="(min-width: 1200px)">
 
                 <source
-                  srcset="./images/nikolai_tarasov_tab.jpg 1x,
-                          ./images/nikolai_tarasov_tab_2x.jpg 2x"
-                  media="min-width: 768px">
+                  srcset="./images/team/nikolai_tarasov_tab.jpg 1x,
+                          ./images/team/nikolai_tarasov_tab_2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source 
+                  srcset="./images/team/nikolai_tarasov_mob.jpg 1x,
+                          ./images/team/nikolai_tarasov_mob_2x.jpg 2x"
+                  media="(max-width: 480px)">
                 
-                <source
-                  srcset="./images/nikolai_tarasov_desk.jpg 1x,
-                          ./images/nikolai_tarasov_desk_2x.jpg 2x"
-                  media="min-width: 1200px">
                
                 <img 
-                  src="./images/nikolai_tarasov.jpg" 
-                  alt="Игорь Демьяненко"/>
+                  src="./images/team/nikolai_tarasov_desk.jpg" 
+                  alt="Николай Тарасов"/>
               </picture>
 
               <div class="employee-cards">
@@ -376,24 +420,24 @@
             <li class="team__item">
 
               <picture>
-                <source 
-                  srcset="./images/mihail_ermakov_mob.jpg 1x,
-                          ./images/mihail_ermakov_mob_2x.jpg 2x"
-                  media="min-width: 480px">
+                <source
+                  srcset="./images/team/mihail_ermakov_desk.jpg 1x,
+                          ./images/team/mihail_ermakov_desk_2x.jpg 2x"
+                  media="(min-width: 1200px)">
 
                 <source
-                  srcset="./images/mihail_ermakov_tab.jpg 1x,
-                          ./images/mihail_ermakov_tab_2x.jpg 2x"
-                  media="min-width: 768px">
+                  srcset="./images/team/mihail_ermakov_tab.jpg 1x,
+                          ./images/team/mihail_ermakov_tab_2x.jpg 2x"
+                  media="(min-width: 768px)">
                 
-                <source
-                  srcset="./images/mihail_ermakov_desk.jpg 1x,
-                          ./images/mihail_ermakov_desk_2x.jpg 2x"
-                  media="min-width: 1200px">
+                <source 
+                  srcset="./images/team/mihail_ermakov_mob.jpg 1x,
+                          ./images/team/mihail_ermakov_mob_2x.jpg 2x"
+                  media="(max-width: 480px)">
                
                 <img 
-                  src="./images/mihail_ermakov.jpg" 
-                  alt="Игорь Демьяненко"/>
+                  src="./images/team/mihail_ermakov_desk.jpg" 
+                  alt="Михаил Ермаков"/>
               </picture>
 
               <div class="employee-cards">
@@ -641,5 +685,6 @@
       </div>
     </main>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

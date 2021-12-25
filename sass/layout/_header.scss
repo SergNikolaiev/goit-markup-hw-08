@@ -56,8 +56,15 @@
     }
   }
 
-  &__menu-mob {
+  &__menu-mob-open {
     height: 16px;
+    background-color: inherit;
+    border: none;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
     @media screen and (min-width: 768px) {
       display: none;
     }
