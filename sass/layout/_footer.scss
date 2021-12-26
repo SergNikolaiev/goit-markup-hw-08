@@ -43,6 +43,10 @@
     @include text(400, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
+  &__email {
+    display: block;
+    margin-bottom: 8px;
+  }
 
   &__social {
     width: 206px;
@@ -66,6 +70,9 @@
       text-transform: uppercase;
       color: #ffffff;
       text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+      }
     }
 
     &__links {
