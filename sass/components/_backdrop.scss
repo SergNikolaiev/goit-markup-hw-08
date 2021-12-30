@@ -33,11 +33,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: skew(0);
   transform: translate(-50%, -50%);
-  transition: transform 500ms;
   padding: 40px;
   overflow: auto;
+  transition: 300ms linear;
 
   &__close {
     width: 30px;
@@ -70,8 +69,7 @@
   }
 
   .is-hidden & {
-    transform: translateX(555px) skew(45deg);
-    transition: transform 1000ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: translateX(100%) skew(45deg);
   }
 }
 
